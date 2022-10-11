@@ -30,3 +30,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+### JDK Java development kit ###
+### JVM Java virtual machine ###
+### JRE Java runtime experince ###
