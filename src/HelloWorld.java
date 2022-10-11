@@ -18,9 +18,9 @@ public class HelloWorld {
         System.out.println(name + " is a " + breed + ".");
         // Conditional logic
         if (cutenessFactor > 8){
-            System.out.println(name + " is cute.");
+//            System.out.println(name + " is cute.");
         } else {
-            System.out.println(name + " needs to work on cuteness.");
+//            System.out.println(name + " needs to work on cuteness.");
         }
 
         boolean isGrinchCute = true;
@@ -31,9 +31,9 @@ public class HelloWorld {
         long bigNumber;   // 8 byte = longs go from about -9 quadrillion to 9 quadrillion
 
         smallNumber = 12;
-        System.out.println(smallNumber);
+//        System.out.println(smallNumber);
         number = smallNumber;
-        System.out.println(number);
+//        System.out.println(number);
 
         number = 2000000000;
         // this is known as casting, converting one datatype into another
@@ -44,9 +44,49 @@ public class HelloWorld {
         // need to put an F after you declare a float
         float imafloat = 2.34F;
         double imadouble = 9.01234567890123;
-        System.out.println(imadouble);
+//        System.out.println(imadouble);
         // this is known as casting, converting one datatype into another
         imafloat = (float) imadouble;
-        System.out.println(Math.pow(2, 3));
+//        System.out.println(Math.pow(2, 3));
+//##################### ASSIGMENT ####################################################################################//
+//      1. Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
+        int myFavoriteNumber = 3;
+        System.out.println("Your favorite number is "+ myFavoriteNumber);
+
+//      2. Create a String variable named myString and assign a string value to it, then print the variable out to the console.
+        String myString = "pizza";
+        System.out.println(myString);
+
+//      3.Change your code to assign a character value to myString. What do you notice?
+        myString = "345";
+        System.out.println("Change from pizza to a #" + myString);
+
+//      4.Change your code to assign the value 3.14159 to myString. What happens?
+        myString = String.valueOf((3.14159));
+        System.out.println(myString);
+        // requires you to declare String.valueOf
+
+//      5. Declare a long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
+        long myNumber = 0;
+        System.out.println(myNumber);
+        // you have to initialize variable myNumber = 0;
+
+//      6. Change your code to assign the value 3.14 to myNumber. What do you notice?
+
+//      7. Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
+
+//      8. Change your code to assign the value 123 to myNumber.
+//      Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
+
+//      9. Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
+
+
+
+
+
+
+
+
+
     }
 }
