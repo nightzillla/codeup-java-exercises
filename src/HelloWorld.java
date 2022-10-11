@@ -85,7 +85,7 @@ public class HelloWorld {
 
 //      9. Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
 
-//        myNumber = 3.14L;
+        // use float and double
 
 //      10. Copy and paste the following code blocks one at a time and execute them
 
@@ -115,18 +115,29 @@ public class HelloWorld {
         // int x = 4;
         // x = x + 5;
 
-        // int x = 3;
-        // int y = 4;
+//        int x = 4;
+//        x += 5;
+
+//         int x = 3;
+//         int y = 4;
         // y = y * x;
+//         y *= x;
+
 
         // int x = 10;
         // int y = 2;
         // x = x / y;
         // y = y - x;
+//        y -= (x /= y);
+//        System.out.println(y);
 
 //        14. What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
 //
 //        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
+
+//        int maximumInteger = integer.MAX_VALUE;
+//        System.out.println(maxiumInteger);
+
 
 
 
