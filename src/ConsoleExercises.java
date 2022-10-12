@@ -18,10 +18,7 @@ public class ConsoleExercises {
         String firstWord = scanner.next();
         String secondWord = scanner.next();
         String thirdWord = scanner.next();
-        String word1 = "how";
-        String word2 = "are";
-        String word3 = "you";
-        System.out.printf("Your words are %s %s %s.%n", firstWord , secondWord, thirdWord);
+        System.out.format("Your words are %s %s %s.%n", firstWord , secondWord, thirdWord);
 // 3. Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
         System.out.println("Please enter a sentence");
         String userInput = scanner.next() + scanner.nextLine();
@@ -38,6 +35,8 @@ public class ConsoleExercises {
         System.out.println("Enter the width your classroom");
         int classRoomWidth = Integer.parseInt(scanner.nextLine());
         System.out.format("The length of your classroom is: %d%n", classRoomWidth);
-
+//Display the area and perimeter of that classroom.
+//The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+        System.out.format("The length and width of your class room is:%d %d%n", classRoomLength, classRoomWidth);
     }
 }
