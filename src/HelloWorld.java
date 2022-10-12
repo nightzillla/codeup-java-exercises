@@ -17,7 +17,7 @@ public class HelloWorld {
         // type "sout and then press tab"
         System.out.println(name + " is a " + breed + ".");
         // Conditional logic
-        if (cutenessFactor > 8){
+        if (cutenessFactor > 8) {
 //            System.out.println(name + " is cute.");
         } else {
 //            System.out.println(name + " needs to work on cuteness.");
@@ -51,7 +51,7 @@ public class HelloWorld {
 //##################### ASSIGMENT ####################################################################################//
 //      1. Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
         int myFavoriteNumber = 3;
-        System.out.println("Your favorite number is "+ myFavoriteNumber);
+        System.out.println("Your favorite number is " + myFavoriteNumber);
 
 //      2. Create a String variable named myString and assign a string value to it, then print the variable out to the console.
         String myString = "pizza";
@@ -135,30 +135,8 @@ public class HelloWorld {
 //
 //        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
 
-//        int maximumInteger = integer.MAX_VALUE;
+//        int maxiumInteger = integer.MAX_VALUE;
 //        System.out.println(maxiumInteger);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
