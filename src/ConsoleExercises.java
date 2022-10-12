@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
-//        The value of pi is approximately 3.14.
-
-// Explore the Scanner Class.
+        System.out.format("The value of pi is approximately %.2f%n", pi);
+// Explore the Scanner Class
 // 1. Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
 // What happens if you input something that is not an integer?
         Scanner scanner = new Scanner(System.in);
