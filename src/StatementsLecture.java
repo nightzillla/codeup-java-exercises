@@ -51,13 +51,23 @@ public class StatementsLecture {
 //        if (c == 0 && e++ < 100) {
 //        }
 //        System.out.println("e = " + e);
-        int i = 1;
-        System.out.println("The loop hasn't started yet. The value of i is " + i);
-        while (i < 10) {
-            System.out.println("Now I'm in the loop. I has not incremented yet and its value is " + i);
-            i++;
-            System.out.println("I'm still in the loop. I has incremented and its value is " + 1);
+//        int i = 1;
+//        System.out.println("The loop hasn't started yet. The value of i is " + i);
+//        while (i < 10) {
+//            System.out.println("Now I'm in the loop. I has not incremented yet and its value is " + i);
+//            i++;
+//            System.out.println("I'm still in the loop. I has incremented and its value is " + 1);
+//        }
+//        System.out.println("The loop has ended because the conditional has tested false. The value of i is " + i);
+        // DO WHILE LOOP
+//        do {
+//            System.out.println("Now I'm in the loop. I has not incremented yet and its value is " + i);
+//            i++;
+//            System.out.println("I'm still in the loop. I has incremented and its value is " + 1);
+//        } while (i < 10);
+//        System.out.println("The loop has ended because the conditional has tested false. The value of i is " + i);
+        for(int i = 0; i < 10; i++){
+            System.out.println(i);
         }
-        System.out.println("The loop has ended because the conditional has tested false. The value of i is " + i);
     }
 }
