@@ -15,9 +15,12 @@ public class ConsoleExercises {
     // What happens if you input something that is not an integer? You get an error.
 // 2. Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
         System.out.println("Enter 3 words:");
+        String userInputWords = scanner.next() + scanner.nextLine();
+        System.out.printf("Your words are %s.%n", userInputWords);
+// 3. Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
+        System.out.println("Please enter a sentence");
         String userInput = scanner.next() + scanner.nextLine();
         System.out.printf("Your words are %s.%n", userInput);
-// 3. Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
 
     }
 }
