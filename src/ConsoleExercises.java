@@ -31,12 +31,12 @@ public class ConsoleExercises {
 //
 //  Use the nextLine method each time you need to get user input. In this case, we need it twice, once to get the user input for the length and again to get the user input for the width. Parse the resulting strings to a numeric type.
         int classRoomLength = Integer.parseInt(scanner.nextLine());
-        System.out.format("The length of your classroom is: %d%n", classRoomLength);
+        System.out.format("The length of your classroom is: %dft%n", classRoomLength);
         System.out.println("Enter the width your classroom");
         int classRoomWidth = Integer.parseInt(scanner.nextLine());
-        System.out.format("The length of your classroom is: %d%n", classRoomWidth);
+        System.out.format("The length of your classroom is: %dft%n", classRoomWidth);
 //Display the area and perimeter of that classroom.
 //The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
-        System.out.format("The length and width of your class room is:%d %d%n", classRoomLength, classRoomWidth);
+        System.out.format("The length and width of your class room is:%dft %dft%n", classRoomLength, classRoomWidth);
     }
 }
