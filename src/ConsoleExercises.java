@@ -37,6 +37,8 @@ public class ConsoleExercises {
         System.out.format("The length of your classroom is: %dft%n", classRoomWidth);
 //Display the area and perimeter of that classroom.
 //The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+        int totalClassArea = classRoomLength * classRoomWidth;
         System.out.format("The length and width of your class room is:%dft %dft%n", classRoomLength, classRoomWidth);
+        System.out.format("The total area is %dft", totalClassArea);
     }
 }
