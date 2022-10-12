@@ -13,7 +13,7 @@ public class ConsoleExercises {
         System.out.format("Your number was: %d%n", userNumber);
     // What happens if you input something that is not an integer? You get an error.
 // 2. Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
-        System.out.println("Enter 3 words:");
+        System.out.println("Enter three words:");
         String firstWord = scanner.next();
         String secondWord = scanner.next();
         String thirdWord = scanner.next();
@@ -30,14 +30,22 @@ public class ConsoleExercises {
 //
 //  Use the nextLine method each time you need to get user input. In this case, we need it twice, once to get the user input for the length and again to get the user input for the width. Parse the resulting strings to a numeric type.
         int classRoomLength = Integer.parseInt(scanner.nextLine());
+        double classRoomLength1 = Double.parseDouble(scanner.nextLine());
         System.out.format("The length of your classroom is: %dft%n", classRoomLength);
         System.out.println("Enter the width your classroom");
         int classRoomWidth = Integer.parseInt(scanner.nextLine());
+        double classRoomWidth2 = Integer.parseInt(scanner.nextLine());
         System.out.format("The length of your classroom is: %dft%n", classRoomWidth);
-//Display the area and perimeter of that classroom.
+// Display the area and perimeter of that classroom.
 //The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
         int totalClassArea = classRoomLength * classRoomWidth;
         System.out.format("The length and width of your class room is:%dft %dft%n", classRoomLength, classRoomWidth);
         System.out.format("The total area is %dft", totalClassArea);
+// In your perimeter/area calculator: - Accept decimal entries. - Calculate the volume of the rooms in addition to the area and perimeter.
+        double height = Double.parseDouble(scanner.nextLine());
+        double volume = classRoomWidth2 * classRoomLength1 * height;
+        double perimeter = classRoomWidth2 * 2 + classRoomLength1 * 2;
+        System.out.printf("The perimeter of your classroom is %.2f%n", perimeter);
+        System.out.printf("The volume of your classroom is %.2f cubic feet", volume);
     }
 }
