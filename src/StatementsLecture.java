@@ -40,5 +40,24 @@ public class StatementsLecture {
 //            default:
 //                System.out.println("We don't have that");
 //                break;
+
+        boolean existence = true;
+//        if(existence) System.out.println("Yes");
+        int theAnswer = 42;
+        if(existence || theAnswer++ == 42){
+        }
+        System.out.println(theAnswer);
+//        int c = 0, d = 100, e = 50;
+//        if (c == 0 && e++ < 100) {
+//        }
+//        System.out.println("e = " + e);
+        int i = 1;
+        System.out.println("The loop hasn't started yet. The value of i is " + i);
+        while (i < 10) {
+            System.out.println("Now I'm in the loop. I has not incremented yet and its value is " + i);
+            i++;
+            System.out.println("I'm still in the loop. I has incremented and its value is " + 1);
+        }
+        System.out.println("The loop has ended because the conditional has tested false. The value of i is " + i);
     }
 }
