@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
         // Loop Basics
@@ -48,12 +49,12 @@ public class ControlFlowExercises {
 //        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
 //
 //  Write a program that prints the numbers from 1 to 100.
-        for(int c = 1; c <= 100; c++) {
+        for (int c = 1; c <= 100; c++) {
             System.out.println("I a number " + c);
         }
 //        For multiples of three: print “Fizz” instead of the number.
         for (int d = 3; d <= 120; d++) {
-            if( d %3 == 0) {
+            if (d % 3 == 0) {
                 System.out.println("Fizz");
             } else {
                 System.out.println(d);
@@ -61,12 +62,42 @@ public class ControlFlowExercises {
         }
 //        For the multiples of five: print “Buzz”.
         for (int g = 5; g <= 100; g++) {
-            if (g %5 == 0) {
+            if (g % 5 == 0) {
                 System.out.println("FizzBuzz");
             } else {
                 System.out.println(g);
             }
         }
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
+        for (int g = 0; g <= 100; g++) {
+            if (g % 5 == 0 || g % 3 == 0) {
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println(g);
+            }
+        }
+//      3. Prompt the user to enter an integer.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a integer");
+        int userNumber = scanner.nextInt();
+        System.out.format("number was: %d", userNumber);
+//        Display a table of squares and cubes from 1 to the value entered.
+        // Number
+
+        for (int y = 0; y <= userNumber; y++) {
+            System.out.format("%-15d%n",y);
+        }
+        // Squared
+        for (int y = 0; y <= userNumber; y++) {
+            System.out.format("%-15d%n",y*y);
+        }
+        // Cube
+        for (int y = 0; y <= userNumber; y++) {
+            System.out.println(y*y*y);
+        }
+
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
     }
 }
