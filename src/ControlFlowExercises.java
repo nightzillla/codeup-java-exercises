@@ -3,11 +3,11 @@ public class ControlFlowExercises {
         // Loop Basics
         // A. While
         // Create an integer variable i with a value of 5.
-        int i = 5;
-        while (i < 15) {
-            System.out.println(i);
-            i++;
-        }
+//        int i = 5;
+//        while (i < 15) {
+//            System.out.println(i);
+//            i++;
+//        }
         ;
         // B. Do While
         // Create a do-while loop that will count by 2's starting with 0 and ending at 100.     Follow each number with a new line.
@@ -43,5 +43,18 @@ public class ControlFlowExercises {
                 break;
             }
         }
+
+//        Fizzbuzz
+//        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
+//
+//  Write a program that prints the numbers from 1 to 100.
+        for(int c = 1; c <= 100; c++) {
+            System.out.println("I a number " + c);
+        }
+//        For multiples of three: print “Fizz” instead of the number.
+
+//        For the multiples of five: print “Buzz”.
+//        For numbers which are multiples of both three and five: print “FizzBuzz”.
+
     }
 }
