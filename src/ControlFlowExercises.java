@@ -93,32 +93,23 @@ public class ControlFlowExercises {
             System.out.println("Do you want to continue? Y/N");
             userChoice = scanner.next();
         } while (userChoice.equals("Y"));
+        // 4.Convert given number grades into letter grades.
 
-//        Display a table of squares and cubes from 1 to the value entered.
-        // Number
-
-//        for (int y = 0; y <= userNumber; y++) {
-//            System.out.format("%-15d%n",y);
-//        }
-//        // Squared
-//        for (int y = 0; y <= userNumber; y++) {
-//            System.out.format("%-15d%n",y*y);
-//        }
-//        // Cube
-//        for (int y = 0; y <= userNumber; y++) {
-//            System.out.println(y*y*y);
-//        }
-
-//        Ask if the user wants to continue.
-//        Assume that the user will enter valid data.
-//        Only continue if the user agrees to.
-//      4. Convert given number grades into letter grades.
-
-//                Prompt the user for a numerical grade from 0 to 100.
-//        Display the corresponding letter grade.
-//                Prompt the user to continue.
-//        Assume that the user will enter valid integers for the grades.
-//        The application should only continue if the user agrees to.
-
+        System.out.println("Enter a numerical grade from 0 to 100");
+        Scanner scanner = new Scanner(System.in);
+        byte grade = scanner.nextByte();
+        char letterGrade;
+        if (grade >= 0 && grade <= 59) {
+            letterGrade = 'F';
+        } else if (grade <= 66) {
+            letterGrade = 'D';
+        } else if (grade <= 79) {
+            letterGrade = 'C';
+        } else if (grade > 79 && grade <= 87) {
+            letterGrade = 'B';
+        } else {
+            letterGrade = 'A';
+        }
+        System.out.println("The letter grade is " + letterGrade);
     } // end main
 } // end class
