@@ -22,11 +22,11 @@ public class ControlFlowExercises {
 //            x-=5;
 //        }while(x >= -10);
     // Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
-        int a = 2;
+        long a = 2;
         do {
             System.out.println("I am a square root " + a);
-            a = a*a;
-        }while(a < -1000000);
+            a = a * a;
+        }while(a < 1000000);
     }
 
 }
