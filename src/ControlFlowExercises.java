@@ -5,11 +5,11 @@ public class ControlFlowExercises {
         // Loop Basics
         // A. While Loops
         // Create an integer variable i with a value of 5.
-        int i = 5;
-        while (i <= 15) {
-            System.out.println(i);
-            i++;
-        }
+//        int i = 5;
+//        while (i <= 15) {
+//            System.out.println(i);
+//            i++;
+//        }
         // B. Do While
         // Create a do-while loop that will count by 2's starting with 0 and ending at 100.     Follow each number with a new line.
 //        int j = 0;
@@ -31,19 +31,19 @@ public class ControlFlowExercises {
 //        }while(a < 1000000);
 
 //      Refactor the previous two exercises to use a for loop instead.
-        for (int j = 100; j >= -10; j -= 5) {
-            System.out.println(j);
-            if (j == -10) {
-                break;
-            }
-        }
-        long a;
-        for (a = 2; a < 1000000; a = a * a) {
-            System.out.println("testing " + a);
-            if (a == 1000000) {
-                break;
-            }
-        }
+//        for (int j = 100; j >= -10; j -= 5) {
+//            System.out.println(j);
+//            if (j == -10) {
+//                break;
+//            }
+//        }
+//        long a;
+//        for (a = 2; a < 1000000; a = a * a) {
+//            System.out.println(a);
+//            if (a == 1000000) {
+//                break;
+//            }
+//        }
 
 //        Fizzbuzz
 //        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
@@ -53,7 +53,7 @@ public class ControlFlowExercises {
             System.out.println("I a number " + c);
         }
 //        For multiples of three: print “Fizz” instead of the number.
-        for (int d = 3; d <= 120; d++) {
+        for (int d = 3; d <= 100; d++) {
             if (d % 3 == 0) {
                 System.out.println("Fizz");
             } else {
@@ -63,7 +63,7 @@ public class ControlFlowExercises {
 //        For the multiples of five: print “Buzz”.
         for (int g = 5; g <= 100; g++) {
             if (g % 5 == 0) {
-                System.out.println("FizzBuzz");
+                System.out.println("Buzz");
             } else {
                 System.out.println(g);
             }
