@@ -1,15 +1,15 @@
 import java.util.Scanner;
+import java.util.Formatter;
 public class ControlFlowExercises {
     public static void main(String[] args) {
         // Loop Basics
-        // A. While
+        // A. While Loops
         // Create an integer variable i with a value of 5.
-//        int i = 5;
-//        while (i < 15) {
-//            System.out.println(i);
-//            i++;
-//        }
-        ;
+        int i = 5;
+        while (i <= 15) {
+            System.out.println(i);
+            i++;
+        }
         // B. Do While
         // Create a do-while loop that will count by 2's starting with 0 and ending at 100.     Follow each number with a new line.
 //        int j = 0;
@@ -81,23 +81,43 @@ public class ControlFlowExercises {
         System.out.println("Enter a integer");
         int userNumber = scanner.nextInt();
         System.out.format("number was: %d", userNumber);
+        System.out.println("Here is your Table!");
+        System.out.printf("Number | Squared | Cubed%n ----- | ------  5| -----%n");
+
+// number
+        for ( int b = 1; b <= userNumber; b++){
+            int number = b;
+            int squared = b*b;
+            int cubic = b*b*b;
+            System.out.println(number +"      |"+squared+ "       |" + cubic);
+        }
+        System.out.println("Do you want to continue? Y/N");
+        String userString = scanner.next();
+
 //        Display a table of squares and cubes from 1 to the value entered.
         // Number
 
-        for (int y = 0; y <= userNumber; y++) {
-            System.out.format("%-15d%n",y);
-        }
-        // Squared
-        for (int y = 0; y <= userNumber; y++) {
-            System.out.format("%-15d%n",y*y);
-        }
-        // Cube
-        for (int y = 0; y <= userNumber; y++) {
-            System.out.println(y*y*y);
-        }
+//        for (int y = 0; y <= userNumber; y++) {
+//            System.out.format("%-15d%n",y);
+//        }
+//        // Squared
+//        for (int y = 0; y <= userNumber; y++) {
+//            System.out.format("%-15d%n",y*y);
+//        }
+//        // Cube
+//        for (int y = 0; y <= userNumber; y++) {
+//            System.out.println(y*y*y);
+//        }
 
 //        Ask if the user wants to continue.
 //        Assume that the user will enter valid data.
 //        Only continue if the user agrees to.
+//      4. Convert given number grades into letter grades.
+
+//                Prompt the user for a numerical grade from 0 to 100.
+//        Display the corresponding letter grade.
+//                Prompt the user to continue.
+//        Assume that the user will enter valid integers for the grades.
+//        The application should only continue if the user agrees to.
     }
 }
