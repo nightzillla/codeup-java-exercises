@@ -52,9 +52,21 @@ public class ControlFlowExercises {
             System.out.println("I a number " + c);
         }
 //        For multiples of three: print “Fizz” instead of the number.
-
+        for (int d = 3; d <= 120; d++) {
+            if( d %3 == 0) {
+                System.out.println("Fizz");
+            } else {
+                System.out.println(d);
+            }
+        }
 //        For the multiples of five: print “Buzz”.
+        for (int g = 5; g <= 100; g++) {
+            if (g %5 == 0) {
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println(g);
+            }
+        }
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
-
     }
 }
