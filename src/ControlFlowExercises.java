@@ -60,7 +60,7 @@ public class ControlFlowExercises {
                 System.out.println(d);
             }
         }
-//        For the multiples of five: print “Buzz”.
+//      For the multiples of five: print “Buzz”.
         for (int g = 5; g <= 100; g++) {
             if (g % 5 == 0) {
                 System.out.println("Buzz");
@@ -68,7 +68,7 @@ public class ControlFlowExercises {
                 System.out.println(g);
             }
         }
-//        For numbers which are multiples of both three and five: print “FizzBuzz”.
+//      For numbers which are multiples of both three and five: print “FizzBuzz”.
         for (int g = 0; g <= 100; g++) {
             if (g % 5 == 0 || g % 3 == 0) {
                 System.out.println("FizzBuzz");
@@ -77,22 +77,22 @@ public class ControlFlowExercises {
             }
         }
 //      3. Prompt the user to enter an integer.
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a integer");
-        int userNumber = scanner.nextInt();
-        System.out.format("number was: %d", userNumber);
-        System.out.println("Here is your Table!");
-        System.out.printf("Number | Squared | Cubed%n ----- | ------  5| -----%n");
+        String userChoice;
+        do {
+            System.out.println("Enter a integer");
+            Scanner scanner = new Scanner(System.in);
+            int userNumber = scanner.nextInt();
+            System.out.println("Here is your table!");
+            System.out.println(""); // to create a blank line
+            System.out.println("Number | Squared | Cubed");
+            System.out.println("-------| ------- | ------");
 
-// number
-        for ( int b = 1; b <= userNumber; b++){
-            int number = b;
-            int squared = b*b;
-            int cubic = b*b*b;
-            System.out.println(number +"      |"+squared+ "       |" + cubic);
-        }
-        System.out.println("Do you want to continue? Y/N");
-        String userString = scanner.next();
+            for (int i = 1; i <= userNumber; i++) {
+                System.out.printf("%-7d| %-8d| %d%n", i, i * i, i * i * i);
+            }
+            System.out.println("Do you want to continue? Y/N");
+            userChoice = scanner.next();
+        } while (userChoice.equals("Y"));
 
 //        Display a table of squares and cubes from 1 to the value entered.
         // Number
@@ -119,5 +119,6 @@ public class ControlFlowExercises {
 //                Prompt the user to continue.
 //        Assume that the user will enter valid integers for the grades.
 //        The application should only continue if the user agrees to.
-    }
-}
+
+    } // end main
+} // end class
