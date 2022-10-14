@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StringLecture {
     public static void main(String[] args) {
 //        String teacher = "teacher";
@@ -17,6 +19,18 @@ public class StringLecture {
         System.out.println(javier);
         System.out.println(Integer.toHexString((System.identityHashCode(javier))));
         System.out.println(Integer.toHexString((System.identityHashCode(alsoJavier))));
+
+
+        String letsTryThis = "Javier";
+        System.out.println(Integer.toHexString((System.identityHashCode(letsTryThis))));
+        String theOriginalJavier = "Javier";
+        System.out.println(letsTryThis == theOriginalJavier);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What's your name?");
+        String userName = scanner.next();
+        System.out.println(theOriginalJavier == userName);
+        System.out.println(theOriginalJavier.equals(userName));
 
     }
 }
