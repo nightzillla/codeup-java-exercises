@@ -9,15 +9,8 @@ public class StringExercise {
 //        System.out.println(message); // prints "Hello, World!"
 
 //        We don't need no education
-        String message = "We don't need";
-        System.out.println(message);
-        message = message + " no education";
-        System.out.println(message);
-//        We don't need no thought control
-        message = "We don't need";
-        System.out.println(message);
-        message = message + " no thought control";
-        System.out.println(message);
+        String message = "We don't need no education %nWe don't need no thought control%n";
+        System.out.printf(message);
 //      Check "this" out!, "s inside of "s!
         String message2 = "Check ";
         System.out.println(message2);
@@ -34,9 +27,6 @@ public class StringExercise {
 //        and the amazing triple backslash \\\!
         String message4 = "I can do backslashes \\, double backslashes \\\\%n, and the amazing triple backslash \\\\\\!";
         System.out.printf(message4);
-
-
-
 
 
     } // end of main
