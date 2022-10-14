@@ -18,7 +18,7 @@ public class StringExercise {
         System.out.println(message);
         message = message + " no thought control";
         System.out.println(message);
-//        Check "this" out!, "s inside of "s!
+//      Check "this" out!, "s inside of "s!
         String message2 = "Check ";
         System.out.println(message2);
         message2 = message2 + "\"this\"";
@@ -27,6 +27,14 @@ public class StringExercise {
         message2 = message2 + "\"s inside of \"";
         message2 = message2 + "s!";
         System.out.println(message2);
+//      In windows, the main drive is usually C:\
+        String message3 = "In windows, the main drive is usually C:\\";
+        System.out.println(message3);
+//        I can do backslashes \, double backslashes \\,
+//        and the amazing triple backslash \\\!
+        String message4 = "I can do backslashes \\, double backslashes \\\\%n, and the amazing triple backslash \\\\\\!";
+        System.out.printf(message4);
+
 
 
 
