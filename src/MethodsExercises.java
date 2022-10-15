@@ -11,7 +11,7 @@ public class MethodsExercises {
 //        System.out.println(calculateFactorial());
 
         int get = getInteger(1, 10);
-        int fact = calculateFactoral(get);
+        int fact = calculateFactorial(get);
         System.out.println(fact);
 
     } // end main
@@ -67,15 +67,15 @@ public class MethodsExercises {
 //          return userInput;
 //      }
 
-    public static int calculateFactoral (int userInput) {
+    public static int calculateFactorial(int userInput) {
         int count = 1;
         for (int i = 1; i < userInput+1; i++) {
             count *= i;
         }
         return count;
     }
-
-
+//    4. Create an application that simulates dice rolling
+//    Ask the user to enter the number of sides for a pair of dice.
 
 
 } // end MethodsExercise
