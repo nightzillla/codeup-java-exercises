@@ -13,7 +13,6 @@ public class MethodsExercises {
         int get = getInteger(1, 10);
         int fact = calculateFactorial(get);
         System.out.println(fact);
-
     } // end main
 //    Create a method that validates that user input is in a certain range and returns that input as an integer if it is within the given range. If not, prompt the user to input their number again until the input is within range.
     // THIS IS RECURSION
@@ -76,6 +75,15 @@ public class MethodsExercises {
     }
 //    4. Create an application that simulates dice rolling
 //    Ask the user to enter the number of sides for a pair of dice.
+      public static void diceRoll (int userInputD, int userInputDTwo) {
+          Scanner scanner = new Scanner(System.in);
+          System.out.println("Enter the number of sides for a pair of dice");
+          int userInput = scanner.nextInt();
+          System.out.printf("Your number is %d%n", userInput);
+          return diceRoll( userInputD,userInputDTwo);
+      }
+
+
 
 
 } // end MethodsExercise
