@@ -1,6 +1,13 @@
 public class Person {
-    public static void main(String[] args) {
 
+
+    // This is a Constructor
+    Person(String name) {
+        this.name = name;
+    }
+    public static void main(String[] args) {
+        Person Danny = new Person("Danny");
+        System.out.println(Danny.name);
     }
     private String name;
     public String getName(){
