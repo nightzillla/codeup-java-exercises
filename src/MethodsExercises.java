@@ -80,7 +80,7 @@ public class MethodsExercises {
           Scanner scanner = new Scanner(System.in);
           System.out.println("Enter the number of sides for a pair of dice");
           int userInput = scanner.nextInt();
-          System.out.printf("Your number is %d%n", userInput);
+          System.out.printf("Your number dice number is %d%d%n", userInputD, userInputDTwo);
           diceRoll(userInputD, userInputDTwo);
           return false;
       }
