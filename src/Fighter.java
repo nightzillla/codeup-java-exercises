@@ -9,5 +9,9 @@ public class Fighter {
     public void battleRoar() {
         System.out.printf("I am %s and I will destroy you %n", name);
     }
+
+    public int attackRoll(){
+        return D20.rolld20();
+    }
 }
 
