@@ -44,7 +44,7 @@ public class MethodsExercises {
         return input * input2;
     }
     // Division
-    public static int division(int input, int input2){
+    public static double division(double input, double input2){
         return input / input2;
     }
     public static int modulus(int input, int input2){
@@ -66,6 +66,24 @@ public class MethodsExercises {
 //          System.out.println(userInput);
 //          return userInput;
 //      }
+
+    public static long calculateFactorial () {
+
+        for (int i = 1; i <= userInput; i++){
+            factorial = factorial * 1;
+        }
+        return 0;
+    }
+    // Going over question 3 in class
+    public static void factorial() {
+        int userInput = getInteger(1,20);
+        long factorial = calculateFactorial(userInput);
+        System.out.printf("The factorial of %d is %d%n", userInput, factorial);
+        System.out.printf("Would you like to calculate another factorial? y/n%n");
+        String userChoice = new Scanner(System.in).next();
+        if(userChoice.equals("y")) factorial();
+    }
+
 
     public static int calculateFactorial(int userInput) {
         int count = 1;

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class JavaNotes {
     // A class is used to define a custom type in Java.
     //You can think of a class as a template, or a blueprint, for objects that will be created based on it.
@@ -23,10 +25,14 @@ public class JavaNotes {
         String studentLastName =  "Hammon";
         // char needs to be in single quotation ''
         char studentFirstInitial = studentFirstName.charAt(0);
-        char studentLastInitial = studentLastName.chartAt(0);
+        char studentLastInitial = studentLastName.charAt(0);
         boolean hasPerfectAttendance = true;
-        System.out.println(studentFirstInitial);
-        System.out.println(studentLastInitial);
+        Scanner input = new Scanner(System.in);
+        studentGPA = input.nextDouble();
+
+        System.out.println(studentFirstName + " " + studentLastName + "now has a GPA of " + studentGPA);
+
+
     }
 
 }
