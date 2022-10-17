@@ -15,5 +15,18 @@ public class JavaNotes {
     // Double: represents a decimal number
     // Char" represents a single letter or symbol
 
+    public static void main(String[] args) {
+        // creating a variable
+        int studentAge = 15;
+        double studentGPA = 3.45;
+        String studentFirstName = "Kayla";
+        String studentLastName =  "Hammon";
+        // char needs to be in single quotation ''
+        char studentFirstInitial = studentFirstName.charAt(0);
+        char studentLastInitial = studentLastName.chartAt(0);
+        boolean hasPerfectAttendance = true;
+        System.out.println(studentFirstInitial);
+        System.out.println(studentLastInitial);
+    }
 
 }
