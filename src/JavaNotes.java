@@ -18,6 +18,7 @@ public class JavaNotes {
     // Char" represents a single letter or symbol
 
     public static void main(String[] args) {
+        // EXERCISE 1
 //        // creating a variable
 //        int studentAge = 15;
 //        double studentGPA = 3.45;
@@ -29,11 +30,31 @@ public class JavaNotes {
 //        boolean hasPerfectAttendance = true;
 //        Scanner input = new Scanner(System.in);
 //        studentGPA = input.nextDouble();
-//
 //        System.out.println(studentFirstName + " " + studentLastName + "now has a GPA of " + studentGPA);
-        System.out.println("Pick a number between 1 and 10");
-        Scanner scanner = new Scanner(System.in);
-        int inputtedNum = scanner.nextInt();
+
+        // EXERCISE 2
+//        System.out.println("Pick a number between 1 and 10");
+//        Scanner scanner = new Scanner(System.in);
+//        // if statement is a control flow statement, where if the condition is true, it performs some kind of action
+//        int inputtedNum = scanner.nextInt();
+//        if(inputtedNum < 5 ){
+//            System.out.println("Enjoy the good luck a freind brings you");
+//        } else {
+//            System.out.println("Your shoe selection will amke you very happy today");
+//        }
+        // EXERCISE 3
+        Scanner input = new Scanner(System.in);
+        boolean isOnRepeat = true;
+        while(isOnRepeat) {
+            System.out.println("Playing current song");
+            System.out.println("Would you like to take this song off of repeat? if so, answer yes");
+            String userInput = input.next();
+
+            if(userInput.equals("yes")) {
+                isOnRepeat = false;
+            }
+        }
+        System.out.println("Playing next song");
     }
 
 }
