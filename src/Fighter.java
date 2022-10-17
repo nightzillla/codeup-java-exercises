@@ -7,7 +7,7 @@ public class Fighter {
     }
 
     public void battleRoar() {
-        System.out.printf("I am %s and I will destroy you", name);
+        System.out.printf("I am %s and I will destroy you %n", name);
     }
 }
 
