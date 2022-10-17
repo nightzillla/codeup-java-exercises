@@ -18,21 +18,22 @@ public class JavaNotes {
     // Char" represents a single letter or symbol
 
     public static void main(String[] args) {
-        // creating a variable
-        int studentAge = 15;
-        double studentGPA = 3.45;
-        String studentFirstName = "Kayla";
-        String studentLastName =  "Hammon";
-        // char needs to be in single quotation ''
-        char studentFirstInitial = studentFirstName.charAt(0);
-        char studentLastInitial = studentLastName.charAt(0);
-        boolean hasPerfectAttendance = true;
-        Scanner input = new Scanner(System.in);
-        studentGPA = input.nextDouble();
-
-        System.out.println(studentFirstName + " " + studentLastName + "now has a GPA of " + studentGPA);
-
-
+//        // creating a variable
+//        int studentAge = 15;
+//        double studentGPA = 3.45;
+//        String studentFirstName = "Kayla";
+//        String studentLastName =  "Hammon";
+//        // char needs to be in single quotation ''
+//        char studentFirstInitial = studentFirstName.charAt(0);
+//        char studentLastInitial = studentLastName.charAt(0);
+//        boolean hasPerfectAttendance = true;
+//        Scanner input = new Scanner(System.in);
+//        studentGPA = input.nextDouble();
+//
+//        System.out.println(studentFirstName + " " + studentLastName + "now has a GPA of " + studentGPA);
+        System.out.println("Pick a number between 1 and 10");
+        Scanner scanner = new Scanner(System.in);
+        int inputtedNum = scanner.nextInt();
     }
 
 }

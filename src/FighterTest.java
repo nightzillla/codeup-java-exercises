@@ -16,5 +16,8 @@ public class FighterTest {
         System.out.println(Club.maxDamage);
         // Math.PI is static variable
         System.out.println(Math.PI);
+
+        Fighter fighter3 = new Fighter("Mason", 1, 500);
+        fighter3.printStats();
     }
 }
