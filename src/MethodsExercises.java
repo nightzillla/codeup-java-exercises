@@ -123,7 +123,8 @@ public class MethodsExercises {
             userChoice = scanner.next();
         }
     }
-
-
+//    Game Development 101
+//      Welcome to the world of game development!
+//      You are going to build a high-low guessing game. Create a class named HighLow inside of src.
 
 } // end MethodsExercise
