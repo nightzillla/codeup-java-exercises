@@ -75,33 +75,35 @@ public class MethodsExercises {
         return 0;
     }
     // Going over question 3 in class
-    public static void factorial() {
-        int userInput = getInteger(1,20);
-        long factorial = calculateFactorial(userInput);
-        System.out.printf("The factorial of %d is %d%n", userInput, factorial);
-        System.out.printf("Would you like to calculate another factorial? y/n%n");
-        String userChoice = new Scanner(System.in).next();
-        if(userChoice.equals("y")) factorial();
-    }
+//    public static void factorial() {
+//        int userInput = getInteger(1,20);
+//        long factorial = calculateFactorial(userInput);
+//        System.out.printf("The factorial of %d is %d%n", userInput, factorial);
+//        System.out.printf("Would you like to calculate another factorial? y/n%n");
+//        String userChoice = new Scanner(System.in).next();
+//        if(userChoice.equals("y")) factorial();
+//    }
 
+//    public static int calculateFactorial(int userInput) {
+//        int count = 1;
+//        for (int i = 1; i < userInput+1; i++) {
+//            count *= i;
+//        }
+//        return count;
+//    }
 
-    public static int calculateFactorial(int userInput) {
-        int count = 1;
-        for (int i = 1; i < userInput+1; i++) {
-            count *= i;
-        }
-        return count;
-    }
 //    4. Create an application that simulates dice rolling
 //    Ask the user to enter the number of sides for a pair of dice.
-      public static boolean diceRoll (int userInputD, int userInputDTwo) {
-          Scanner scanner = new Scanner(System.in);
-          System.out.println("Enter the number of sides for a pair of dice");
-          int userInput = scanner.nextInt();
-          System.out.printf("Your number dice number is %d%d%n", userInputD, userInputDTwo);
-          diceRoll(userInputD, userInputDTwo);
-          return false;
-      }
+//      public static boolean diceRoll (int userInputD, int userInputDTwo) {
+//          Scanner scanner = new Scanner(System.in);
+//          System.out.println("Enter the number of sides for a pair of dice");
+//          int userInput = scanner.nextInt();
+//          System.out.printf("Your number dice number is %d%d%n", userInputD, userInputDTwo);
+//          diceRoll(userInputD, userInputDTwo);
+//          return false;
+//      }
+
+    // Going over question 4 in class
 
 
 
