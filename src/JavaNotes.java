@@ -43,18 +43,42 @@ public class JavaNotes {
 //            System.out.println("Your shoe selection will amke you very happy today");
 //        }
         // EXERCISE 3
-        Scanner input = new Scanner(System.in);
-        boolean isOnRepeat = true;
-        while(isOnRepeat) {
-            System.out.println("Playing current song");
-            System.out.println("Would you like to take this song off of repeat? if so, answer yes");
-            String userInput = input.next();
+//        Scanner input = new Scanner(System.in);
+//        boolean isOnRepeat = true;
+//        while(isOnRepeat) {
+//            System.out.println("Playing current song");
+//            System.out.println("Would you like to take this song off of repeat? if so, answer yes");
+//            String userInput = input.next();
+//
+//            if(userInput.equals("yes")) {
+//                isOnRepeat = false;
+//            }
+//        }
+//        System.out.println("Playing next song");
 
-            if(userInput.equals("yes")) {
-                isOnRepeat = false;
-            }
+        // EXERCISE 4
+        String question = "What is the largest planet in our solar system";
+        String choiceOne = "Earth";
+        String choiceTwo = "Jupiter";
+        String choiceThree = "Saturn";
+
+        String correctAnswer = choiceTwo;
+
+        // Write a print statement asking the question
+        System.out.println(question);
+        // Write a print statment giving the answer choices
+        System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".");
+        // Have the user input an answer
+        Scanner scanner = new Scanner(System.in);
+        // Retrieve the user's input
+        String input = scanner.next();
+        // If the user's input matches the correctAnswer...
+        // then the user is correct and we ant to print out a congrats message to the user.
+        if(correctAnswer.equals(input.toLowerCase())){
+            System.out.println("Congrats! That's teh correct answer");
+        } else {
+            System.out.println("You are incorrect.");
         }
-        System.out.println("Playing next song");
-    }
 
-}
+    } // end of main
+} // end of class
