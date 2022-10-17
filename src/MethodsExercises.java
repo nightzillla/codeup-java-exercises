@@ -8,12 +8,14 @@ public class MethodsExercises {
         System.out.println("I'm multiplying 10 * 10 = " + multiplication(10,10));
         System.out.println("I'm dividing 10 from 5 = " + division(10,5));
 
+        rollDice();
 //        System.out.println(calculateFactorial());
 
         int get = getInteger(1, 10);
-        int fact = calculateFactorial(get);
-        System.out.println(fact);
-        System.out.println(diceRoll(1, 6));
+//        int fact = calculateFactorial(get);
+//        System.out.println(fact);
+//        System.out.println(diceRoll(1, 6));
+
     } // end main
 //    Create a method that validates that user input is in a certain range and returns that input as an integer if it is within the given range. If not, prompt the user to input their number again until the input is within range.
     // THIS IS RECURSION
@@ -67,13 +69,13 @@ public class MethodsExercises {
 //          return userInput;
 //      }
 
-    public static long calculateFactorial () {
-
-        for (int i = 1; i <= userInput; i++){
-            factorial = factorial * 1;
-        }
-        return 0;
-    }
+//    public static long calculateFactorial () {
+//
+//        for (int i = 1; i <= userInput; i++){
+//            factorial = factorial * 1;
+//        }
+//        return 0;
+//    }
     // Going over question 3 in class
 //    public static void factorial() {
 //        int userInput = getInteger(1,20);
@@ -104,7 +106,23 @@ public class MethodsExercises {
 //      }
 
     // Going over question 4 in class
-
+    public static long generatedRandomNumber(int max){
+        return Math.round(Math.random() * max);
+    }
+    public static void rollDice(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How many sides do the dice have?");
+        byte numberOfSide = scanner.nextByte();
+        System.out.printf("Your dice have %d sides.%n", numberOfSide);
+        System.out.println("Do you want to roll the dice? y/n");
+        String userChoice = scanner.next();
+        while (userChoice.equals("y")){
+            System.out.println("You rolled the dice!");
+            System.out.printf("You rolled %d and %d%n", generatedRandomNumber(numberOfSide), generatedRandomNumber(numberOfSide));
+            System.out.println("Do you want to roll the dice again? y/n");
+            userChoice = scanner.next();
+        }
+    }
 
 
 
