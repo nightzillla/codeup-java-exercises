@@ -1,3 +1,4 @@
+package animals;
 
 public class DogTest {
     public static void main(String[] args) {

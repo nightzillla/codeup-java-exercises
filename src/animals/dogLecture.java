@@ -1,3 +1,5 @@
+package animals;
+
 public class dogLecture {
     public static String bark() {
 //        System.out.println("woof woof!");
