@@ -17,6 +17,14 @@ public class JavaNotes {
     // Double: represents a decimal number
     // Char" represents a single letter or symbol
 
+    // EXERCISE 5
+    public static void announceDeveloperTeaTime(){
+        System.out.println("Waiting for developer tea time...");
+        System.out.println("Type in a random word and press Enter to start developer tea time");
+        Scanner input = new Scanner(System.in);
+        input.next();
+        System.out.println("It's developer tea time!");
+}
     public static void main(String[] args) {
         // EXERCISE 1
 //        // creating a variable
@@ -57,28 +65,28 @@ public class JavaNotes {
 //        System.out.println("Playing next song");
 
         // EXERCISE 4
-        String question = "What is the largest planet in our solar system";
-        String choiceOne = "Earth";
-        String choiceTwo = "Jupiter";
-        String choiceThree = "Saturn";
-
-        String correctAnswer = choiceTwo;
-
-        // Write a print statement asking the question
-        System.out.println(question);
-        // Write a print statment giving the answer choices
-        System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".");
-        // Have the user input an answer
-        Scanner scanner = new Scanner(System.in);
-        // Retrieve the user's input
-        String input = scanner.next();
-        // If the user's input matches the correctAnswer...
-        // then the user is correct and we ant to print out a congrats message to the user.
-        if(correctAnswer.equals(input.toLowerCase())){
-            System.out.println("Congrats! That's teh correct answer");
-        } else {
-            System.out.println("You are incorrect.");
-        }
+//        String question = "What is the largest planet in our solar system";
+//        String choiceOne = "Earth";
+//        String choiceTwo = "Jupiter";
+//        String choiceThree = "Saturn";
+//
+//        String correctAnswer = choiceTwo;
+//
+//        // Write a print statement asking the question
+//        System.out.println(question);
+//        // Write a print statment giving the answer choices
+//        System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".");
+//        // Have the user input an answer
+//        Scanner scanner = new Scanner(System.in);
+//        // Retrieve the user's input
+//        String input = scanner.next();
+//        // If the user's input matches the correctAnswer...
+//        // then the user is correct and we ant to print out a congrats message to the user.
+//        if(correctAnswer.equals(input.toLowerCase())){
+//            System.out.println("Congrats! That's teh correct answer");
+//        } else {
+//            System.out.println("You are incorrect.");
+//        }
 
     } // end of main
 } // end of class

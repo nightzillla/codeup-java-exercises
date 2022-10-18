@@ -3,6 +3,7 @@ public class Fighter {
     public String name;
     public int hitPoints;
     public int maxDamage;
+    // Instance methods
     // Yellow are methods or function of the class
     public void printStats(){
         System.out.printf("%s has %d hit points and can do %d damage%n", name, hitPoints, maxDamage);
@@ -12,10 +13,14 @@ public class Fighter {
         System.out.printf("I am %s and I will destroy you %n", name);
     }
 
+
+    // This is an instance = lowercase
+    // public can be access anywhere
     public int attackRoll(){
         return D20.rolld20();
     }
     // DEFAULT Constructor
+    // No-arg constructor
     public Fighter(){
 //        this.name = "John";
 //        this.hitPoints = 1;
