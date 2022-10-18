@@ -1,8 +1,36 @@
+package rpg;
+
+import rpg.D20;
+
 public class Fighter {
+    // Instnace
     // purple properties / or variable
-    public String name;
-    public int hitPoints;
-    public int maxDamage;
+    private String name;
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    private int hitPoints;
+
+    // This is a setter
+    public void setHitPoints(int hitPoints){
+        // if (hitPoints  > 0) {... set hitpoints}
+        this.hitPoints = hitPoints;
+    }
+    // getter -- set to public
+    public int getHitPoints() {
+        return hitPoints;
+    }
+    private int maxDamage;
+    public int getMaxDamage() {
+        return maxDamage;
+    }
+
+    public void setMaxDamage(int maxDamage) {
+        this.maxDamage = maxDamage;
+    }
     // Instance methods
     // Yellow are methods or function of the class
     public void printStats(){
