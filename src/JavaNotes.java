@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import util.Input;
 
 public class JavaNotes {
     // A class is used to define a custom type in Java.
@@ -16,6 +17,10 @@ public class JavaNotes {
     // Int: represents a whole number
     // Double: represents a decimal number
     // Char" represents a single letter or symbol
+
+    //Input class or type
+    // inpt this is a instance or object of that class of Input
+    public Input inpt = new Input();
 
     // EXERCISE 5
     public static void announceDeveloperTeaTime(){

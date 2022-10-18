@@ -28,5 +28,8 @@ public class FighterTest {
 
         Fighter fighter3 = new Fighter("Mason", 1, 500);
         fighter3.printStats();
+        System.out.println(fighter3.getName());
+        fighter3.setHitPoints(12);
+        fighter3.printStats();
     }
 }
