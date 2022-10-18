@@ -7,7 +7,7 @@ public class DogTest {
 //        dog.sound = "woof";
         dog.setName("Appa");
         dog.setSound("woof");
-        dog.makeNoise();
+//        dog.makeNoise();
 
     }
 }

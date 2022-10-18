@@ -46,7 +46,7 @@ public class JavaNotes {
 //        // if statement is a control flow statement, where if the condition is true, it performs some kind of action
 //        int inputtedNum = scanner.nextInt();
 //        if(inputtedNum < 5 ){
-//            System.out.println("Enjoy the good luck a freind brings you");
+//            System.out.println("Enjoy the good luck a friend brings you");
 //        } else {
 //            System.out.println("Your shoe selection will amke you very happy today");
 //        }
