@@ -26,6 +26,5 @@ public class ArrayExercises {
         System.out.println(names.getName());
     }
 
-
     } // end of main
 } // end of ArrayExercises class
