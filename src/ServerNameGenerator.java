@@ -13,7 +13,7 @@ public class ServerNameGenerator {
         }
 
     public static void main(String[] args) {
-        // this is a instance
+        // when you're creating a new object it is instanced
         ServerNameGenerator nameGenerator = new ServerNameGenerator();
         System.out.println(nameGenerator.randomElement());
     }
