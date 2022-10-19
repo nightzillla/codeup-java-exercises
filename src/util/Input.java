@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Input {
     private  Scanner scanner;
-
     // This is a getter
     public Scanner getScanner() {
         return scanner;
@@ -18,7 +17,6 @@ public class Input {
         System.out.println("Enter your input:");
         return scanner.nextLine();
     }
-
     // The yesNo method should return true if the user enters y, yes, or variants thereof, and false otherwise.
     public boolean yesNo() {
         System.out.println("Do you want to continue Y/N?");
@@ -29,8 +27,7 @@ public class Input {
             return false;
         }
     }
-
-//  The getInt(int min, int max) method should keep prompting the user for input until they give an integer within the min and max.
+    // The getInt(int min, int max) method should keep prompting the user for input until they give an integer within the min and max.
     public int getInt(int min, int max) {
         System.out.printf("Enter a integer from %d to %d", min, max);
         int userInput = scanner.nextInt();
@@ -43,7 +40,6 @@ public class Input {
     public int getInt() {
         System.out.println("Enter a number");
         return scanner.nextInt();
-
     }
     public double getDouble(double min, double max) {
         System.out.printf("Enter a integer from %.2f to %.2f", min, max);
@@ -55,11 +51,9 @@ public class Input {
         }
     }
     public double getDouble(){
-        System.out.printf("Enter a number %.2f");
+        System.out.println("Enter a number %.2f");
         return scanner.nextDouble();
     }
-
-
     // constructor
     public Input() {
         scanner = new Scanner(System.in);
