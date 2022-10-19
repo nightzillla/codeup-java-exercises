@@ -12,6 +12,21 @@ public class ArrayLecture {
         System.out.println(numbers[0]);
         Arrays.sort(numbers);
         System.out.println(numbers[0]);
+        System.out.println(Arrays.toString(numbers));
+        String[] wordsForWeird = {"strange", "bizarre", "uncanny", "odd", "peculiar", "weird"};
+        System.out.println(wordsForWeird[2]);
+
+        for(String wordForWeird : wordsForWeird){
+            System.out.println(wordForWeird);
+        }
+
+        for (int number : numbers){
+            System.out.println(number);
+        }
+
+        for (int i = 0; i < numbers.length; i++){
+            System.out.printf("The number at index %d is %d", i, numbers[i]);
+        }
     }
 
 }
