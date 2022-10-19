@@ -21,7 +21,7 @@ public class Input {
     public boolean yesNo() {
         System.out.println("Do you want to continue Y/N?");
         String userInput = scanner.next();
-        if (userInput.equals("yes")||userInput.equals("y") ||userInput.equals ("Y")){
+        if (userInput.equalsIgnoreCase("yes")||userInput.equalsIgnoreCase("y")){
             return true;
         } else {
             return false;
@@ -53,6 +53,16 @@ public class Input {
     public double getDouble(){
         System.out.println("Enter a number %.2f");
         return scanner.nextDouble();
+    }
+
+    public double getDouble(String prompt){
+        System.out.println(prompt);
+        return scanner.nextDouble();
+    }
+
+    public String getString(String prompt) {
+        System.out.println(prompt);
+        return scanner.nextLine();
     }
     // constructor
     public Input() {
