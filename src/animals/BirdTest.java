@@ -19,6 +19,8 @@ public class BirdTest {
         parrot2.setName("Parrot");
         System.out.println(parrot2.getName());
 
+
+        // Example of polymorphism:
         BirdLecture[] birds = new BirdLecture[3];
         birds[0] = new Finch();
         birds[0].setName("Lesser Goldfinch");
@@ -30,5 +32,10 @@ public class BirdTest {
         for(BirdLecture bird: birds){
             bird.makeNoise();
         }
+        Parrot backToParrot = (Parrot) birds[1];
+        backToParrot.echo("I can echo now");
+
+        BirdLecture.birdSounds(birds);
+
     }
 }

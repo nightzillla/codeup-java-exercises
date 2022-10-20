@@ -11,7 +11,13 @@ public class BirdLecture {
         this.name = name;
     }
 
-    public void makeNoise(){
+    public static void makeNoise(){
         System.out.println("caw caw");
     }
+    // Polymorphic argument
+    public static void birdSounds(BirdLecture[] birdsArray){
+        for(BirdLecture bird : birdsArray){
+            bird:makeNoise();
+        }
+    };
 }
