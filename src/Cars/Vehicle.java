@@ -15,5 +15,11 @@ public class Vehicle {
     public void makeNoise() {
         System.out.println("vroom vroom");
     }
-
+    public void alarm(){
+        System.out.println("Whoo whoooo whoooo");
+    }
+    public Vehicle(){};
+    public Vehicle(String name){
+        this.name = name;
+    }
 }
