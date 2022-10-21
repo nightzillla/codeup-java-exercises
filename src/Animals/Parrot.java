@@ -17,5 +17,8 @@ public class Parrot extends Bird {
     public Parrot(){
         System.out.println("A new parrot just got constructed");
     }
+    public void beCute(){
+        System.out.println("Human goes awwww");
+    }
 
 }

@@ -10,7 +10,7 @@ public class VehicleTest {
         honda.makeNoise();
         Honda s2000 = new Honda();
         s2000.makeNoise();
-        Bird bird = new Bird();
+//        Bird bird = new Bird();
 
     }
 }

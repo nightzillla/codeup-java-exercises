@@ -1,11 +1,11 @@
 package shapes;
 
-public class Measurable {
+public interface Measurable {
+//    all methods are public and abstract.
+//    all properties are public static and final.
+//    no static methods.
 
-//    double getPerimeter() {
-//        return 0;
-//    }
-//    double getArea() {
-//        return 0;
-//    }
+
+    double getPerimeter();
+    double getArea();
 }
