@@ -8,5 +8,8 @@ public class GarageTest {
         Car truck = new Car("Tacoma");
         Car muscleCar = new Car("Challenger");
         Car luxuryVehicle = new Car("Lexus is500");
+        garage.getVehicles()[0] = dailyCommuter;
+        System.out.println();
+
     }
 }
