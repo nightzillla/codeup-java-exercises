@@ -1,7 +1,22 @@
 package shapes;
     // square inherits rectangle because of extends
-public class Square extends Rectangle{
-        private double side;
+public class Square extends Quadrilateral{
+        protected double side;
+        public Square(){};
+        public Square(double side){
+            super(side,side);
+
+        };
+
+//        @Override
+//        public double getPerimeter() {
+//            return 0;
+//        }
+//
+//        @Override
+//        public double getArea() {
+//            return 0;
+//        }
 //    // Inheritance and Polymorphism Exercise
 //    // this is default constructor
 //    public Square(){};
@@ -20,14 +35,14 @@ public class Square extends Rectangle{
 //    // This is the end of Inheritance and Polymorphism Exercise
 
         // Going over in class
-        public Square(double side){
-            super(side, side);
-            this.side = side;
-        }
-        public double getPerimeter(){
-            return 4 * side;
-        }
-        public double getArea(){
-            return Math.pow(super.length, 2);
-        }
+//        public Square(double side){
+//            super(side, side);
+//            this.side = side;
+//        }
+//        public double getPerimeter(){
+//            return 4 * side;
+//        }
+//        public double getArea(){
+//            return Math.pow(super.length, 2);
+//        }
     }
