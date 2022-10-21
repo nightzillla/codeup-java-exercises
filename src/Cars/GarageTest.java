@@ -15,5 +15,7 @@ public class GarageTest {
         Vehicle[] garageVehicles = {dailyCommuter, truck, muscleCar, luxuryVehicle};
         garage.setVehicles(garageVehicles);
         garage.alarmCascade();
+//        garage.getVehicles()[0] = new Motorcylce("Honda");
+        System.out.println(garage.getVehicles()[0].getName());
     }
 }

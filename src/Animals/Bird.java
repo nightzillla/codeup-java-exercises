@@ -1,6 +1,6 @@
-package animals;
+package Animals;
 
-public class BirdLecture {
+public class Bird {
     private String name;
 
     public String getName() {
@@ -15,9 +15,10 @@ public class BirdLecture {
         System.out.println("caw caw");
     }
     // Polymorphic argument
-    public static void birdSounds(BirdLecture[] birdsArray){
-        for(BirdLecture bird : birdsArray){
+    public static void birdSounds(Bird[] birdsArray){
+        for(Bird bird : birdsArray){
             bird:makeNoise();
         }
-    };
+    }
+
 }

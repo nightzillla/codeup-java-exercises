@@ -1,4 +1,4 @@
-package animals;
+package Animals;
 
 public class dogLecture {
     public static String bark() {

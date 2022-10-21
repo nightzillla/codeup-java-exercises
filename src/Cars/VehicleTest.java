@@ -1,5 +1,7 @@
 package Cars;
 
+import Animals.Bird;
+
 public class VehicleTest {
     public static void main(String[] args) {
         Vehicle honda = new Vehicle();
@@ -8,5 +10,7 @@ public class VehicleTest {
         honda.makeNoise();
         Honda s2000 = new Honda();
         s2000.makeNoise();
+        Bird bird = new Bird();
+
     }
 }

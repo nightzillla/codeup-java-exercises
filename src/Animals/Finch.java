@@ -1,4 +1,4 @@
-package animals;
+package Animals;
 
 public class Finch extends TweetyBird {
     public void main(String[] args) {

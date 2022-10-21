@@ -1,6 +1,9 @@
-package animals;
+package Animals;
 
-public class Parrot extends BirdLecture {
+public class Parrot extends Bird {
+
+    public final static String order = "Psittaciformes";
+
 
 //    public static void makeNoise(){
 //        super.makeNoise();
@@ -8,6 +11,11 @@ public class Parrot extends BirdLecture {
 //    }
     public void echo(String input){
         System.out.println(input);
+    }
+
+
+    public Parrot(){
+        System.out.println("A new parrot just got constructed");
     }
 
 }
