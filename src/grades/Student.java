@@ -33,6 +33,7 @@ public class Student {
     }
 
     // returns the average of the students grades
+    // THIS IS A FOR LOOP
     public double getGradeAverage() {
         int total = 0;
         for(int i = 0; i < grades.size(); i++){
@@ -40,7 +41,6 @@ public class Student {
         }
         return (double) total/ grades.size();
     }
-
     // Default Constructor
     public Student(){};
 
