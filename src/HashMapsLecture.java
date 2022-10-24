@@ -1,7 +1,6 @@
 import rpg.Monster;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static java.util.Map.entry;
 
@@ -47,11 +46,40 @@ public class HashMapsLecture {
 
         // Looping over HashMaps. Technique 1:
         // use .entrySet to derive a Set of entries
-        // Each entry is represented as a Map.Entry<DataTypeOfKey, DataTypeOfValue
-
+        // Each entry is represented as a Map.Entry<DataTypeOfKey, DataTypeOfValue>
+        // Once you have an entrySet you can use an enhanced for loop to loop over it
+        System.out.println("Loop over entrySet:");
         for(Map.Entry<String, Monster > monsterEntry : monsterHashMap.entrySet()){
             Monster monster = monsterEntry.getValue();
             System.out.printf("The %s has %d hit points, an armo class of %d, and does %d damage.%n", monster,monster.getHitPoints(),monster.getArmorClass(),monster.getDamage());
         }
+
+        // To create a list of specific properties in the objects
+        // stored as HashMap values, we can use .keySet().stream().toList()
+
+        List<String> monsterNames = new ArrayList<>(monsterHashMap.keySet().stream().toList());
+        // Once I've got a list, I can sort it and do other list things to it
+        Collections.sort(monsterNames);
+        System.out.println(monsterNames);
+
+        // Technique 2: get the keyset, convert it to a list, and loop
+        // over the list,
+        // The strings generated from the keyset are the keys to the HashMap
+        // So looping over the list allows me to access all the HashMap entries
+        System.out.println("Loope over keySet:");
+        for(String monsterName : monsterNames){
+            Monster monster = monsterHashMap.get(monsterName);
+            System.out.printf("The %s has %d hit points, an armo class of %d, and does %d damage.%n", monster,monster.getHitPoints(),monster.getArmorClass(),monster.getDamage());
+        }
+
+
+        // Technique 3: the forEach loop
+        System.out.println("Loop over forEach:");
+        monsterHashMap.forEach((key, monster) -> {
+            System.out.printf("The %s has %d hit points, an armo class of %d, and does %d damage.%n", monster,monster.getHitPoints(),monster.getArmorClass(),monster.getDamage());
+        });
+
+
+
     }// end of main method
 } // end of class
