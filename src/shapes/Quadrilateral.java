@@ -19,9 +19,9 @@ package shapes;
     public void setWidth(double width) {
         this.width = width;
     }
-
+    // default constructor
     public Quadrilateral(){};
-
+    // custom constructor
     public Quadrilateral(double length, double width){
         this.setLength(length);
         this.setWidth(width);
