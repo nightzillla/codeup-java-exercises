@@ -2,6 +2,8 @@ import com.sun.security.jgss.GSSUtil;
 import rpg.Monster;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CollectionsLecture {
@@ -43,11 +45,12 @@ public class CollectionsLecture {
         // Loop over arrayLists
         // traditional for loop
         // use this if you want to find certain index
-        for (int i = 0; i < monsterArrayList.size(); i++){
-            if( i == monsterArrayList.size()-1){
+        for (int i = 0; i < monsterArrayList.size(); i++) {
+            if (i == monsterArrayList.size() - 1) {
                 System.out.printf("%s%n", monsterArrayList.get(i));
             } else {
-            System.out.printf("%s%n",monsterArrayList.get(i));
+                System.out.printf("%s%n", monsterArrayList.get(i));
+            }
         }
 
         // Enhanced for loop
@@ -55,5 +58,21 @@ public class CollectionsLecture {
         for (Monster monster :monsterArrayList){
             System.out.println(monster.getHitPoints());
         }
-    }
-}
+        // When creating an ArrayList of primitive data types, use the corresponding Object wrapper. ArrayList can only contain objects.
+        ArrayList<Integer> myNumbers = new ArrayList<>(List.of(1,89,34, -67, 98,23));
+        System.out.println(myNumbers);
+        Collections.sort(myNumbers);
+        System.out.println(myNumbers);
+        ArrayList<String> randomWords = new ArrayList<>(List.of("version", "suntan", "bond", "defeat", "later","rate"));
+        System.out.println(randomWords);
+        Collections.sort(randomWords);
+        System.out.println(randomWords);
+        // :: is a ref to a method
+        // Comparator
+        monsterArrayList.sort(Comparator.comparing(Monster::getHitPoints));
+
+
+
+
+    } // end of main method
+} // end of collectionLecture
