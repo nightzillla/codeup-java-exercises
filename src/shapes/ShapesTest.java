@@ -2,14 +2,23 @@ package shapes;
 
 import org.w3c.dom.css.Rect;
 
+import java.security.MessageDigest;
+
 public class ShapesTest {
     public static void main(String[] args) {
-        // this is creating a instance
-        Quadrilateral rect = new Rectangle(5,8);
-        System.out.println(rect.getArea());
-        System.out.println(rect.getPerimeter());
-        Quadrilateral squ = new Square(7);
-        System.out.println(squ.getArea());
+//        // this is creating a instance
+//        Quadrilateral rect = new Rectangle(5,8);
+//        System.out.println(rect.getArea());
+//        System.out.println(rect.getPerimeter());
+//        Quadrilateral squ = new Square(7);
+//        System.out.println(squ.getArea());
+
+        // going over in class
+        Measurable myShape;
+
+        myShape = new Square(5);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
 
 //        // this is a constructor in Rectangle
 //        Rectangle box1 = new Rectangle(4,5);

@@ -2,6 +2,28 @@ package shapes;
     // square inherits rectangle because of extends
 public class Square extends Quadrilateral{
         protected double side;
+
+        @Override
+        public void setLength(double length) {
+            this.length = length;
+            this.width = width;
+        }
+        public void setWidth(double width){
+            this.width = width;
+            this.length = width;
+        }
+
+
+        public double getArea(){
+            return length * width;
+        }
+        public double getPerimeter() {
+            return 4 * length;
+        }
+        @Override
+        public double getWidth() {
+            return 0;
+        }
         public Square(){};
         public Square(double side){
             super(side,side);
