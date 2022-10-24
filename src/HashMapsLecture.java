@@ -72,12 +72,29 @@ public class HashMapsLecture {
             System.out.printf("The %s has %d hit points, an armo class of %d, and does %d damage.%n", monster,monster.getHitPoints(),monster.getArmorClass(),monster.getDamage());
         }
 
-
         // Technique 3: the forEach loop
         System.out.println("Loop over forEach:");
         monsterHashMap.forEach((key, monster) -> {
             System.out.printf("The %s has %d hit points, an armo class of %d, and does %d damage.%n", monster,monster.getHitPoints(),monster.getArmorClass(),monster.getDamage());
         });
+
+        // convert to a TreeMap sort by key
+//        System.out.println("Output of forEach over the TreeMap");
+//        Map<String, Monster> monsterTreeMapMap = new TreeMap<>(monsterHashMap);
+//        monsterTreeMap.forEach((key, monster) -> {
+//            System.out.printf("The %s has %d hit points, an armo class of %d, and does %d damage.%n", monster,monster.getHitPoints(),monster.getArmorClass(),monster.getDamage());
+//        });
+//
+//        Object[] monsterArray = monsterHashMap.values().toArray();
+//        for (Object monster : monsterArray) {
+//            int hitPoints = (Monster) monster).getHitPoints();
+//
+//        }
+        Monster[] monstersArray2 = monsterHashMap.values().toArray(new Monster[0]);
+        for (Monster monster : monstersArray2){
+            System.out.println(monster.getName() + " has " + monster.getHitPoints() + " hit points");
+        }
+
 
 
 
