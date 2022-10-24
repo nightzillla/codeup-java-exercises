@@ -7,9 +7,9 @@ public class Practice {
         return input - 10;
     }
 // 3. Create a public static method *average* in the Practice class that takes an array of integers and returns their average as a double.
-    public static arrayOfInt[] average(arrayofInt[] average){
-
-    }
+//    public static arrayOfInt[] average(arrayofInt[] average){
+//
+//    }
 // 4. Create a class called Pet with two String instance variables, name and type.
 // 5. Create getters and setters for the properties as well as a constructor that takes two strings and sets the name and type.
 // 6. Create a PetDog class that inherits from Pet.
