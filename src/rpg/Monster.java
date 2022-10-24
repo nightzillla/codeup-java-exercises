@@ -41,6 +41,11 @@ public class Monster {
     public String toString(){
         return name;
     }
+    // To create a custom comparison method, we implement Comparable<ObjectClassName>
+    // In the object class. We can use this syntax
+    public int compare(Monster m1, Monster m2){
+        return Integer.compare(m2.getHitPoints(), m1.getHitPoints());
+    }
 
     public Monster(){}
 

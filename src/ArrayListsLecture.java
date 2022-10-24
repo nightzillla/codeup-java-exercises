@@ -1,4 +1,3 @@
-import com.sun.security.jgss.GSSUtil;
 import rpg.Monster;
 
 import java.util.ArrayList;
@@ -6,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class CollectionsLecture {
+public class ArrayListsLecture {
 
     public static void main(String[] args) {
 //              <dataType>
@@ -62,14 +61,33 @@ public class CollectionsLecture {
         ArrayList<Integer> myNumbers = new ArrayList<>(List.of(1,89,34, -67, 98,23));
         System.out.println(myNumbers);
         Collections.sort(myNumbers);
+
         System.out.println(myNumbers);
+        // We can use Collections.sort to sort arrayLists that contain numbers or strings
+        // They will be sorted in ascending "natural" order
         ArrayList<String> randomWords = new ArrayList<>(List.of("version", "suntan", "bond", "defeat", "later","rate"));
         System.out.println(randomWords);
         Collections.sort(randomWords);
+
+        // In addition, the List interface contains a default method called .sort(),
+        // So you can call .sort on any ArrayList. It takes a comparator as its argument
+        // You can pass it Collections.reverseOrder() to sort an arraylist of strings
+        // or numbers in reverse order
+        randomWords.sort(Collections.reverseOrder());
         System.out.println(randomWords);
+        System.out.println(monsterArrayList);
+
+        // If you want to compare custom objects rather than numbers or strings,
+        // A simple method is to call .sort() on the list and pass it
+        // Comparator.comparing(NameOfObject::getterForWhatYouWantToCompare)
+        // so to compare monsters by hit points, I use Monster::getHitPoints
         // :: is a ref to a method
         // Comparator
         monsterArrayList.sort(Comparator.comparing(Monster::getHitPoints));
+        System.out.println(monsterArrayList);
+
+        // To use the compare() method that we wrote in the Monster class, we use
+        // the sort method and pass it a no-arg constructor
 
 
 
