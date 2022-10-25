@@ -17,7 +17,6 @@ public class PetDog extends Pet implements Companion{
     public boolean isTrained(){
         return trained;
     }
-
     @Override
     public String snuggle() {
         return name + " wants to snuggle";
