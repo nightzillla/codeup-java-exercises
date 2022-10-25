@@ -15,7 +15,6 @@ public class Student {
         this.grades = grades;
     }
 
-
     //GETTER
 
     public String getName() {
@@ -25,7 +24,6 @@ public class Student {
     public ArrayList<Integer> getGrades() {
         return grades;
     }
-
 
     // adds the given grade to the grades property
     public void addGrade(int grade) {
@@ -41,6 +39,11 @@ public class Student {
         }
         return (double) total/ grades.size();
     }
+
+    public String toString(){
+        return name;
+    }
+
     // Default Constructor
     public Student(){};
 
@@ -50,6 +53,4 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
-
-
-}
+} // end of student class
