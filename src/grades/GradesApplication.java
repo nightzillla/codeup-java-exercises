@@ -8,7 +8,21 @@ import java.util.Scanner;
 public class GradesApplication {
     public static void main(String[] args) {
         Student Danny = new Student("Danny");
-
+        Danny.addGrade(50);
+        Danny.addGrade(70);
+        Danny.addGrade(30);
+        Student Steven = new Student("Steven");
+        Steven.addGrade(90);
+        Steven.addGrade(99);
+        Steven.addGrade(100);
+        Student Rod = new Student("Rod");
+        Steven.addGrade(88);
+        Steven.addGrade(95);
+        Steven.addGrade(92);
+        Student Mason = new Student("Mason");
+        Steven.addGrade(80);
+        Steven.addGrade(91);
+        Steven.addGrade(55);
         HashMap<String, Student> Students = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
         Students.put("trickzillla",Danny);
