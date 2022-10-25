@@ -1,15 +1,21 @@
 package AssessmentReview;
 
 public class Practice {
-// 1. Create a class called Practice with a main method.
+
+    // 1. Create a class called Practice with a main method.
 // 2. Create a public static method in the Practice class called *subtractTen* that takes one integer argument and returns that number minus 10.
     public static int subtractTen(int input){
         return input - 10;
     }
 // 3. Create a public static method *average* in the Practice class that takes an array of integers and returns their average as a double.
-//    public static arrayOfInt[] average(arrayofInt[] average){
-//
-//    }
+    public static double average(double[] average){
+        double total = 0;
+        for(int i = 0; i < average.length; i++){
+            total = total + average[i];
+        }
+        double result = total/ average.length;
+        return result;
+    }
 // 4. Create a class called Pet with two String instance variables, name and type.
 // 5. Create getters and setters for the properties as well as a constructor that takes two strings and sets the name and type.
 // 6. Create a PetDog class that inherits from Pet.
