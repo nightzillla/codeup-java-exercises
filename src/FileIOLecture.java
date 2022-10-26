@@ -1,13 +1,18 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class FileIOLecture {
     public static void main(String[] args) {
 
         // ============================ PATH
-        String path = "src/test.txt";
+        // control g
+//      // src/fileIoLecture/test.txt
+        Path pathToTest = Paths.get("src", "fileIoLecture", "test.txt");
+        System.out.println(pathToTest);
 
-//        Path pathToTest = Paths.get("src", "fileIoLecture", "test.txt");
-//        System.out.println(pathToTest);
-
-//        Path pathToLuna = Paths.get("hello", "weywot.txt");
+//        Path pathToLuna= Paths.get("hello", "weywot.txt");
 //        System.out.println(pathToLuna);
 
 //        Path fileLecturePath = Paths.get("src", "fileIoLecture", "FileIOLecture.java");
@@ -21,7 +26,7 @@ public class FileIOLecture {
 //        System.out.println(otherPath.normalize().toAbsolutePath());
 
         // ============================ FILE METHODS
-
+          Path gitignoreFile = Paths.get(".gitignore");
 //        System.out.println(Files.exists(fileLecturePath));
 //        System.out.println(Files.exists(Paths.get("bob.txt")));
 //
@@ -40,6 +45,7 @@ public class FileIOLecture {
 //                e.printStackTrace();
 //            }
 //        }
+//
 //
 //        if (Files.notExists(dataFile)) {
 //            try {
@@ -68,8 +74,7 @@ public class FileIOLecture {
 //            System.out.println("Hello, " + name + "!");
 //        }
 
-
-
+          // readAllLines will read all the files.
 //        try {
 //            List<String> contents = Files.readAllLines(
 //                Paths.get("data", "bob.txt")
@@ -81,8 +86,6 @@ public class FileIOLecture {
 //            System.out.println("Exception!");
 //            e.printStackTrace();
 //        }
-
-
 
         // ============================ WRITING FILES
 
