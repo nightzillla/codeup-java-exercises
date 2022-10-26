@@ -36,10 +36,6 @@ public class InputUpdate {
          to catch the NumberFormatException. If the exception is caught, call the getInt() method again.
      */
     public static int getInt(){
-        // get user input as a string
-        // parse the string into a number
-        // if the parse input throws an exception, recurse
-        // if no exception return the parsed number
         System.out.println("Enter an integer:");
         Input scanner = new  Input();
         String x = scanner.getScanner().nextLine();
@@ -95,7 +91,6 @@ public class InputUpdate {
 
     public static void main(String[] args) {
         getInt();
-        getDouble();
 
     }
 }
