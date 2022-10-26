@@ -17,6 +17,6 @@ public class PracticeTest {
         test.add(60); // 60 * 5 = 300 | test = [300, 200, 100]
         test.add(40); // 40 * 5 = 200
         test.add(20); // 20 * 5 = 100
-        System.out.println(Practice.multiplyAll(5, test));
+//        System.out.println(Practice.multiplyAll(5, test));
     }
 }

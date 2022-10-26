@@ -1,8 +1,7 @@
 import java.awt.print.PrinterException;
-        import java.sql.SQLException;
-        import java.util.Random;
-        import java.util.Scanner;
-
+import java.sql.SQLException;
+import java.util.Random;
+import java.util.Scanner;
 /*
     CODE SAMPLES...
     - Encountering Runtime Exceptions
@@ -20,22 +19,36 @@ public class ExceptionsLecture {
 
 //        throw SomeException("Exception message here");
 //        throw new RuntimeException("You did something wrong. Sorry...");
+//        try {
+//            if (/* queryAPI() == 500_ERROR */) {
+//                throw new Exception("Must handle this...");
+//            } else {
+//                // queryAPI() and do things with info...
+//            }
+//        } catch(Exception e){
+//            // write stacktrack to error file on the server
+//            // queryBackupAPI() (DarkSkyAPI) and do things with info
+//            e.printStackTrace();
+//        }
+//        System.out.println("Will this run??");
+//        // unchecked exceptions
 
         // unchecked exceptions
 
-//        int x = 1;
-//        int y = 0;
-//        int value = x / y; // will throw ArithmeticException at runtime
+        int x = 1;
+        int y = 0;
+        int value = x / y; // will throw ArithmeticException at runtime
 //
 //        addTwoAndTwo(3, 1); // will only throw an exception at runtime
 
 
         // checked exceptions
 
-//        makeConnection();
+        makeConnection();
 
         // multiple catches and finally
-
+//        try: The code here will be tried, but it could casuse an exeception
+//        Catch: code that handles examples
 //        try {
 //            printRiskyInput();
 //        } catch (PrinterException e) {
@@ -78,29 +91,33 @@ public class ExceptionsLecture {
     /**
      * THINK OF THIS METHOD AS CODE YOU WOULD WRITE AS THE APPLICATION DEVELOPER
      */
-//    private static void makeConnection() {
+    private static void makeConnection() {
 //        // we need to handle the possible exception thrown by the connectToDatabase method
 //        // we can either handle the exception with a try-catch block in this method or bump up
 //        // the responsibility of adding the try-catch block to the main method using the throws keyword
-//        connectToDatabase(); // what happens if the random number is 0 (can't connect to the database?)
+        try {
+            connectToDatabase(); // what happens if the random number is 0 (can't connect to the database?)
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+//    public static void soutName(String name) throws NameIsBobException {
+//        if (name.equalsIgnoreCase("bob")) {
+//            throw new NameIsBobException("NOOOOOOO!!!!");
+//        } else {
+//            System.out.println(name);
+//        }
 //    }
 
-    public static void soutName(String name) throws NameIsBobException {
-        if (name.equalsIgnoreCase("bob")) {
-            throw new NameIsBobException("NOOOOOOO!!!!");
-        } else {
-            System.out.println(name);
-        }
-    }
+//        public static void printRiskyInput () throws Exception {
+//            String userInput = sc.next();
+//            if (userInput.length() > 10) {
+//                throw new PrinterException("Input too long to print!!");
+//            }
+//            if (userInput.equalsIgnoreCase("hello")) {
+//                throw new Exception("Can't enter hello.");
+//            }
+//        }
 
-    public static void printRiskyInput() throws Exception{
-        String userInput = sc.next();
-        if (userInput.length() > 10) {
-            throw new PrinterException("Input too long to print!!");
-        }
-        if (userInput.equalsIgnoreCase("hello")) {
-            throw new Exception("Can't enter hello.");
-        }
     }
-
 }
