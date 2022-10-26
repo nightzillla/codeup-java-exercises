@@ -36,6 +36,10 @@ public class InputUpdate {
          to catch the NumberFormatException. If the exception is caught, call the getInt() method again.
      */
     public static int getInt(){
+        // get user input as a string
+        // parse the string into a number
+        // if the parse input throws an exception, recurse
+        // if no exception return the parsed number
         System.out.println("Enter an integer:");
         Input scanner = new  Input();
         String x = scanner.getScanner().nextLine();
@@ -43,10 +47,11 @@ public class InputUpdate {
             return Integer.valueOf(x);
 
         } catch(NumberFormatException e){
-            System.out.println("Please enter a integer!");
+            System.out.println("Please Enter a Integer");
             return getInt();
         }
     }
+
     public int getInt(String prompt){
         System.out.println(prompt);
         return scanner.nextInt();
@@ -67,23 +72,10 @@ public class InputUpdate {
         TODO: refactor this method to use Double.valueOf(getString()) and surround it with a try-catch block to
          to catch the NumberFormatException. If the exception is caught, call the getDouble() method again.
      */
-    public double getDouble(){
+    public static double getDouble(){
         System.out.println("Enter an number:");
-        return Double.valueOf(getString());
+        return scanner.nextDouble();
     }
-
-//    public static int getInt(){
-//        System.out.println("Enter an integer:");
-//        Input scanner = new  Input();
-//        String x = scanner.getScanner().nextLine();
-//        try {
-//            return Integer.valueOf(x);
-//
-//        } catch(NumberFormatException e){
-//            System.out.println("Please enter a integer!");
-//            return getInt();
-//        }
-//    }
 
     public double getDouble(String prompt){
         System.out.println(prompt);
@@ -103,6 +95,7 @@ public class InputUpdate {
 
     public static void main(String[] args) {
         getInt();
+        getDouble();
 
     }
 }
