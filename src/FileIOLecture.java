@@ -2,6 +2,7 @@ public class FileIOLecture {
     public static void main(String[] args) {
 
         // ============================ PATH
+        String path = "src/test.txt";
 
 //        Path pathToTest = Paths.get("src", "fileIoLecture", "test.txt");
 //        System.out.println(pathToTest);
