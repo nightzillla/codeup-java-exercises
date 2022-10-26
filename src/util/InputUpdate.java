@@ -47,7 +47,6 @@ public class InputUpdate {
             return getInt();
         }
     }
-
     public int getInt(String prompt){
         System.out.println(prompt);
         return scanner.nextInt();
@@ -70,8 +69,21 @@ public class InputUpdate {
      */
     public double getDouble(){
         System.out.println("Enter an number:");
-        return scanner.nextDouble();
+        return Double.valueOf(getString());
     }
+
+//    public static int getInt(){
+//        System.out.println("Enter an integer:");
+//        Input scanner = new  Input();
+//        String x = scanner.getScanner().nextLine();
+//        try {
+//            return Integer.valueOf(x);
+//
+//        } catch(NumberFormatException e){
+//            System.out.println("Please enter a integer!");
+//            return getInt();
+//        }
+//    }
 
     public double getDouble(String prompt){
         System.out.println(prompt);
