@@ -1,9 +1,10 @@
 package util;
 import java.util.Scanner;
 
+
 public class InputUpdate {
 
-    private Scanner scanner;
+    private static Scanner scanner;
 
     public void Input() {
         this.scanner = new Scanner(System.in);
@@ -34,9 +35,17 @@ public class InputUpdate {
         TODO: refactor this method to use Integer.valueOf(getString()) and surround it with a try-catch block to
          to catch the NumberFormatException. If the exception is caught, call the getInt() method again.
      */
-    public int getInt(){
+    public static int getInt(){
         System.out.println("Enter an integer:");
-        return scanner.nextInt();
+        Input scanner = new  Input();
+        String x = scanner.getScanner().nextLine();
+        try {
+            return Integer.valueOf(x);
+
+        } catch(NumberFormatException e){
+            System.out.println("Please enter a integer!");
+            return getInt();
+        }
     }
 
     public int getInt(String prompt){
@@ -78,5 +87,10 @@ public class InputUpdate {
             userInput = scanner.nextDouble();
         }
         return userInput;
+    }
+
+    public static void main(String[] args) {
+        getInt();
+
     }
 }
