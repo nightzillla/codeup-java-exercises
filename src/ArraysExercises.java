@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayExercises {
+public class ArraysExercises {
 //    Create a static method named addPerson.
     public static Person[] addPerson(Person[] personName) {
         // to initialized new array

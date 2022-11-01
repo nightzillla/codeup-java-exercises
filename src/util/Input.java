@@ -1,5 +1,7 @@
 package util;
 
+import javax.swing.text.MaskFormatter;
+import java.text.ParseException;
 import java.util.Scanner;
 
 public class Input {
@@ -68,5 +70,21 @@ public class Input {
     public Input() {
         scanner = new Scanner(System.in);
     }
+
+    public static class decimalFormatTest {
+        public static void main(String[] args) {
+            String format = "(###) ###-####";
+            long number = 1234567890;
+            try {
+                MaskFormatter maskFormatter = new MaskFormatter(format);
+                maskFormatter.setValueContainsLiteralCharacters(false);
+                String formattedPhoneNumber = (maskFormatter.valueToString(number));
+                System.out.println(formattedPhoneNumber);
+            } catch (ParseException pex){
+                System.out.println("Parse exception");
+                pex.printStackTrace();
+            }
+        }
+    } // end of DecimalFormatTest
 
 } // end of Input

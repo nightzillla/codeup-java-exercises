@@ -9,7 +9,7 @@ public class PracticeTest {
 //      Practice input = new Practice();
         double[] array = {50,100,3,4,5};
         System.out.println(Practice.subtractTen(50));
-        System.out.println(Practice.average(array));
+//        System.out.println(Practice.average(numbers));
         PetDog Appa = new PetDog("Appa","French Bull Dog",true);
         System.out.println(Appa.getName() +" "+ Appa.getType() +" "+ Appa.isTrained());
         System.out.println(Appa.snuggle());
