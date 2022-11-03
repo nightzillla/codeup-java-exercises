@@ -18,6 +18,4 @@ public class RecursionLecture {
 
     // Write the recursive definition of an algorithm to find the minimum value in an array of ints
     // Express the definition as the 2 hallmarks
-
-
 }
