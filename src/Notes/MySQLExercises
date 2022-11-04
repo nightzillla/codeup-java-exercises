@@ -1,0 +1,30 @@
+Exercise Goals
+Create users with different privileges
+Log in as the users we've created to test and understand privileges
+// creating new database CREATE DATABASE my_test_db;
+// dropping database DROP DATABASE my_test_db;
+// to see the list of users - SELECT user, host FROM mysql.user;
+1. Log in to the MySQL server.
+mysql.server start
+mysql -u root -p
+// enter pw
+// List users - SELECT user, host FROM mysql.user;
+// Dropping User - DROP USER 'joe'@'localhost';
+
+2. Create a new user called joe that can log in from localhost. Give joe a memorable password. Do not grant any privileges to joe.
+// CREATE USER 'joe'@'localhost' IDENTIFIED BY 'password';
+
+a. Use the query we gave you at the beginning of the lesson to make sure joe has been created and has a password.
+mysql -u joe -p
+b. Exit mysql and then connect again as joe.
+exit
+c. Try the same SELECT query again and see the results. What results are you getting? Why?
+d. Log out from mysql and then reconnect again as root
+mysql -u joe -p
+
+3. Create a new user named anne. Give anne her own password
+a. Grant all privileges to anne on mysql.user. Do not give her the ability to grant those privileges to others.
+b. Exit, and then connect as anne.
+c. Run the query to list all users from this lesson. Why does this work?
+d. Create a user named sally and try to grant sally all permissions on the mysql.user table. Does this work?
+e. Exit and reconnect as root.
