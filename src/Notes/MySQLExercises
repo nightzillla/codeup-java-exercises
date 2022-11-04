@@ -1,9 +1,13 @@
 Exercise Goals
 Create users with different privileges
 Log in as the users we've created to test and understand privileges
-// creating new database CREATE DATABASE my_test_db;
-// dropping database DROP DATABASE my_test_db;
+// creating new database - CREATE DATABASE my_test_db;
+// dropping database - DROP DATABASE my_test_db;
 // to see the list of users - SELECT user, host FROM mysql.user;
+// GRANT ALL ON codeup_test_db.* TO 'codeup_test_user'@'localhost';
+// to show grants - SHOW GRANTS FOR 'codeup_test_user'@'localhost';
+// to show table users
+// DESCRIBE users; - to show the tables;
 1. Log in to the MySQL server.
 mysql.server start
 mysql -u root -p
